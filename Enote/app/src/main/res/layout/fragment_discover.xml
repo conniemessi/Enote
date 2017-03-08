@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <HorizontalScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:id="@+id/type_group"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/display"
+                    style="@style/radio_btn_discover"
+                    android:textColor="#222222"
+                    android:text="书籍" />
+
+                <RadioButton
+                    android:id="@+id/lecture"
+                    android:text="景点"
+                    style="@style/radio_btn_discover"/>
+
+                <RadioButton
+                    android:id="@+id/recruit"
+                    style="@style/radio_btn_discover"
+                    android:text="美食"/>
+
+            </RadioGroup>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+    <com.zy.zlistview.view.ZListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@android:color/transparent"></com.zy.zlistview.view.ZListView>
+
+</LinearLayout>
